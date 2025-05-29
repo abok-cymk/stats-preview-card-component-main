@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/abok-cymk/stat-preview-card-component-main.git)
+- Solution URL: [solution URL](https://github.com/abok-cymk/stats-preview-card-component-main)
 - Live Site URL: [live site URL](https://)
 
 ### Built with
