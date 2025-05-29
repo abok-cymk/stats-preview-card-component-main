@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="bg-(--very-dark-blue) h-screen grid items-center">
+      <section
+        class="bg-(--dark-desaturated-blue) max-w-4xl mx-auto flex flex-col-reverse gap-8 lg:flex-row rounded"
+      >
+        <div class="px-12 py-8 flex flex-col justify-between">
+          <div class="flex flex-col gap-[1lh] text-center sm:text-left mb-8 sm:mb-6 lg:mb-0">
+            <h2
+              class="text-(--white) lg:max-w-md text-3xl font-(--font-weight-I700)"
+            >
+              Get <span class="text-(--soft-violet)">insights</span> that help
+              your business grow.
+            </h2>
+            <p
+              class="text-[0.9375rem]/7 font-(--font-lexendDeca) text-(--slightly-transparent-white) sm:max-w-lg lg:max-w-[22rem]"
+            >
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <div
+            class="flex justify-between sm:flex-row flex-col gap-5 text-center sm:text-left"
+          >
+            <div>
+              <p class="text-(--white) font-(--font-weight-I700) text-2xl/7">10k+</p>
+              <h3 class="tracking-wider text-(--slightly-transparent-white) text-xs uppercase font-(--font-lexendDeca) pt-1">companies</h3>
+            </div>
+            <div>
+              <p class="text-(--white) font-(--font-weight-I700) text-2xl/7">314</p>
+              <h3 class="tracking-wider text-(--slightly-transparent-white) text-xs uppercase font-(--font-lexendDeca) pt-1">templates</h3>
+            </div>
+            <div>
+              <p class="text-(--white) font-(--font-weight-I700) text-2xl/7">12m+</p>
+              <h3 class="tracking-wider text-(--slightly-transparent-white) text-xs uppercase font-(--font-lexendDeca) pt-1">queries</h3>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <picture class="relative">
+            <source
+              media="(min-width: 939px)"
+              srcset="/images/image-header-desktop.jpg"
+            />
+            <source
+              media="(max-width: 450px)"
+              srcset="/images/image-header-mobile.jpg"
+            />
+            <img
+              src="/images/image-header-desktop.jpg"
+              alt=""
+              class="w-full h-full object-cover max-lg:rounded-t lg:rounded-r"
+            />
+          </picture>
+          <div class="absolute inset-0 z-2 bg-(--soft-violet) opacity-70 max-lg:rounded-t lg:rounded-r" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
